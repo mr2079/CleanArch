@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 using CleanArch.Application.Contracts.Persistence;
-using CleanArch.Domain.Common;
+using CleanArch.Domain.SqlServer.Common;
 using Microsoft.EntityFrameworkCore.Query;
 
 namespace CleanArch.Infrastructure.Implementation.Repositories;

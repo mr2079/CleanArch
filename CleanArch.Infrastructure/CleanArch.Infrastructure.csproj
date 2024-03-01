@@ -9,11 +9,13 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.1" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
+		<PackageReference Include="MongoDB.Driver" Version="2.24.0" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <ProjectReference Include="..\CleanArch.Application\CleanArch.Application.csproj" />
-	  <ProjectReference Include="..\CleanArch.Domain\CleanArch.Domain.csproj" />
+	  <ProjectReference Include="..\CleanArch.Domain.MongoDb\CleanArch.Domain.MongoDB.csproj" />
+	  <ProjectReference Include="..\CleanArch.Domain.SqlServer\CleanArch.Domain.SqlServer.csproj" />
 	</ItemGroup>
 
 </Project>

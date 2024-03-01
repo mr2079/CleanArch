@@ -1,4 +1,4 @@
-﻿using CleanArch.Domain.Common;
+﻿using CleanArch.Domain.SqlServer.Common;
 
 namespace CleanArch.Application.Contracts.Persistence;
 

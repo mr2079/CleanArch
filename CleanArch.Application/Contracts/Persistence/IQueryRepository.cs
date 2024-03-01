@@ -1,5 +1,5 @@
 ﻿using System.Linq.Expressions;
-using CleanArch.Domain.Common;
+using CleanArch.Domain.SqlServer.Common;
 using Microsoft.EntityFrameworkCore.Query;
 
 namespace CleanArch.Application.Contracts.Persistence;

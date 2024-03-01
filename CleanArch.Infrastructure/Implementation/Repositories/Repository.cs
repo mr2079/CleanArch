@@ -1,5 +1,5 @@
 ﻿using CleanArch.Application.Contracts.Persistence;
-using CleanArch.Domain.Common;
+using CleanArch.Domain.SqlServer.Common;
 
 namespace CleanArch.Infrastructure.Implementation.Repositories;
 

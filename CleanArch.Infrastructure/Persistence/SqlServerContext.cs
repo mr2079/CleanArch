@@ -1,14 +1,14 @@
-﻿using CleanArch.Domain.Common;
-using CleanArch.Domain.Entities.AppUser;
+﻿using CleanArch.Domain.SqlServer.Common;
+using CleanArch.Domain.SqlServer.Entities.AppUser;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CleanArch.Infrastructure.Persistence;
 
-public class ApplicationContext : IdentityDbContext<User, Role, long>
+public class SqlServerContext : IdentityDbContext<User, Role, long>
 {
-	public ApplicationContext() {}
-	public ApplicationContext(DbContextOptions<ApplicationContext> options)
+	public SqlServerContext() {}
+	public SqlServerContext(DbContextOptions<SqlServerContext> options)
 		: base(options) {}
 
 	public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

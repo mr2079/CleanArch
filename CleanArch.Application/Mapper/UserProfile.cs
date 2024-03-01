@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using CleanArch.Application.DTOs.User;
 using CleanArch.Application.Features.User.Commands;
-using CleanArch.Domain.Entities.AppUser;
+using CleanArch.Domain.SqlServer.Entities.AppUser;
 
 namespace CleanArch.Application.Mapper;
 

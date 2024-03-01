@@ -15,4 +15,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CleanArch.Infrastructure\CleanArch.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
