@@ -14,7 +14,7 @@ public static class DependencyInjection
         this IServiceCollection services,
         IConfiguration configuration)
     {
-        // services.Configure<SiteSetting>();
+        services.Configure<SiteSetting>(configuration.Bind);
 
         services.AddMediatR(config =>
             config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));

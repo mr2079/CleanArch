@@ -3,7 +3,6 @@ using CleanArch.Application.Model.SiteSettings;
 using CleanArch.Infrastructure.Implementation.Repositories;
 using CleanArch.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 
