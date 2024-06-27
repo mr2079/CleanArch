@@ -1,6 +1,6 @@
 ﻿namespace CleanArch.Domain.SqlServer.Abstractions;
 
-public abstract class Entity(Guid id)
+public abstract class EntityBase(Guid id)
 {
 	private readonly List<IDomainEvent> _domainEvents = new();
 

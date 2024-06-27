@@ -8,7 +8,7 @@ public sealed class User(
 	string userName,
 	string email,
 	FullName name,
-	Address? address = null) : Entity(id)
+	Address? address = null) : EntityBase(id)
 {
 	public string UserName { get; private set; } = userName;
 	public string Email { get; private set; } = email;

@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace CleanArch.Domain.MongoDB.Common;
+namespace CleanArch.Domain.MongoDB.Abstractions;
 
 public abstract class CollectionBase
 {

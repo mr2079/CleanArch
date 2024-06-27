@@ -1,7 +1,5 @@
-﻿using CleanArch.Application.Contracts.Persistence;
-using CleanArch.Application.Model.SiteSettings;
-using CleanArch.Infrastructure.Implementation.Repositories;
-using CleanArch.Infrastructure.Persistence;
+﻿using CleanArch.Application.Model.SiteSettings;
+using CleanArch.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -24,9 +22,6 @@ public static class DependencyInjection
         services.AddSingleton(_ => 
             new MongoDbContext(siteSettings.Database.MongoDb.ConnectionString,
                 siteSettings.Database.MongoDb.DatabaseName));
-
-        services.AddScoped(typeof(IQueryRepository<,>), typeof(QueryRepository<,>));
-        services.AddScoped(typeof(ICommandRepository<,>), typeof(Repository<,>));
 
         return services;
     }

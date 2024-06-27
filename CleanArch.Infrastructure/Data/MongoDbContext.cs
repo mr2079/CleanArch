@@ -1,4 +1,4 @@
-﻿using CleanArch.Domain.MongoDB.Collections.User;
+﻿using CleanArch.Domain.MongoDB.User;
 using MongoDB.Driver;
 
 namespace CleanArch.Infrastructure.Data;
