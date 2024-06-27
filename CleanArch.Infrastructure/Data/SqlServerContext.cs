@@ -3,7 +3,7 @@ using CleanArch.Domain.SqlServer.Entities.AppUser;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArch.Infrastructure.Persistence;
+namespace CleanArch.Infrastructure.Data;
 
 public class SqlServerContext : IdentityDbContext<User, Role, long>
 {

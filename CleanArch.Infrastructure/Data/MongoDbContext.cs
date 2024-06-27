@@ -1,7 +1,7 @@
 ﻿using CleanArch.Domain.MongoDB.Collections.User;
 using MongoDB.Driver;
 
-namespace CleanArch.Infrastructure.Persistence;
+namespace CleanArch.Infrastructure.Data;
 
 public class MongoDbContext
 {

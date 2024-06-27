@@ -22,4 +22,8 @@
 	  <ProjectReference Include="..\CleanArch.Domain.SqlServer\CleanArch.Domain.SqlServer.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Contracts\Persistence\Common\" />
+	</ItemGroup>
+
 </Project>
