@@ -1,4 +1,4 @@
-﻿using CleanArch.Domain.MongoDB.User;
+﻿using CleanArch.Domain.MongoDB.Users;
 using MongoDB.Driver;
 
 namespace CleanArch.Infrastructure.Data;
@@ -13,6 +13,6 @@ public class MongoDbContext
         _database = client.GetDatabase(databaseName);
     }
 
-    public IMongoCollection<AppUser> Users =>
-        _database.GetCollection<AppUser>(nameof(Users));
+    public IMongoCollection<User> Users =>
+        _database.GetCollection<User>(nameof(Users));
 }
