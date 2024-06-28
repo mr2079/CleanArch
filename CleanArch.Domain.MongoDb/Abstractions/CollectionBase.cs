@@ -1,21 +1,13 @@
-﻿using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson.Serialization.Attributes;
 
 namespace CleanArch.Domain.MongoDB.Abstractions;
 
-public abstract class CollectionBase
+public abstract class CollectionBase(
+	string id,
+	bool isDeleted = false)
 {
-    [BsonId]
-    [BsonRepresentation(BsonType.ObjectId)]
-    public string? Id { get; set; }
-    [BsonElement]
-    public bool Deleted { get; set; }
-    [BsonElement]
-    public DateTime CreatedAt { get; set; }
-    [BsonElement]
-    public string? CreatedBy { get; set; }
-    [BsonElement]
-    public DateTime ModifiedAt { get; set; }
-    [BsonElement]
-    public string? ModifiedBy { get; set; }
+	public string Id { get; set; } = id;
+	[BsonElement] public bool IsDeleted { get; set; } = isDeleted;
+    [BsonElement] public DateTime CreatedAt { get; set; }
+    [BsonElement] public DateTime ModifiedAt { get; set; }
 }

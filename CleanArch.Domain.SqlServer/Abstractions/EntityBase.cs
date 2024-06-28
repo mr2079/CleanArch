@@ -1,12 +1,15 @@
 ﻿namespace CleanArch.Domain.SqlServer.Abstractions;
 
-public abstract class EntityBase(Guid id)
+public abstract class EntityBase(
+	string id,
+	bool isDeleted = false)
 {
 	private readonly List<IDomainEvent> _domainEvents = new();
 
-	public Guid Id { get; set; } = id;
+	public string Id { get; set; } = id;
 	public DateTime CreatedAt { get; set; }
 	public DateTime ModifiedAt { get; set; }
+	public bool IsDeleted { get; set; } = isDeleted;
 
 	public IReadOnlyList<IDomainEvent> GetDomainEvents()
 	{

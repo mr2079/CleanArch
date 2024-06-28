@@ -2,4 +2,4 @@
 
 namespace CleanArch.Domain.SqlServer.Users.Events;
 
-public sealed record UserCreatedDomainEvent(Guid UserId) : IDomainEvent;
+public sealed record UserCreatedDomainEvent(string UserId) : IDomainEvent;
